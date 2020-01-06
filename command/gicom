@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+  cat <<EOM
+  usage: $0: $0 <commit-msg>
+
+EOM
+exit 0
+fi
+
+COMMITMSG=$1
+
+git commit -m "$COMMITMSG"
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+  cat <<EOM
+  usage: $0: $0 <branch-name>
+
+EOM
+exit 0
+fi
+
+BRANCH_NAME=$1
+
+git checkout "$BRANCH_NAME"
+
