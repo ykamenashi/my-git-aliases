@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+BRANCH_NAME=${1:-}
+REMOTE_NAME=${2:-}
+
+git push $REMOTE_NAME $BRANCH_NAME
+
